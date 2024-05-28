@@ -1,0 +1,60 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Cadastro</title>
+    <link rel="stylesheet" href="styles.css">
+    <link rel="stylesheet" href="style.css">
+    <script src="scripts.js"></script>
+    <link rel="shortcut icon" href="img/logo.png" type="image/x-icon">
+</head>
+<body>
+    <main id="tela2">
+        <div id="quadrante1tela2">
+            <img src="img/logocontraste.png" alt="">
+            <div id="quadrante1tela2inps">
+                <div id="quadrante1tela2inp1">
+                    <input class="inputela2" type="email" placeholder="Email*:">
+                    <input class="inputela2" type="password" placeholder="Senha*:">
+                    <input class="inputela2" type="text" placeholder="Nome*:">
+                    <input class="inputela2" type="tel" placeholder="Contato*:">
+                    <input class="inputela2" type="number" placeholder="Cpf*:">
+                </div>
+                <div id="quadrante1tela2inp2">
+                    <input class="inputela2" type="cep" placeholder="Cep*:">
+                    <input class="inputela2" type="text" placeholder="Rua*:">
+                    <input class="inputela2" type="text" placeholder="Bairro*:">
+                    <input class="inputela2" type="text" placeholder="Cidade*:">
+                    <input class="inputela2" type="text" placeholder="UF*:">
+                </div>
+            </div>
+        </div>
+        <div id="quadrante2">
+            <img src="img/logo.png" alt="" width="80px">
+            <p>Qual categoria de usuario você se encaixa?</p>
+            <div class="container">
+                <button id="button1" onclick="showOptions('options1', this)">Profissional</button>
+                <button id="button2" onclick="showOptions('options2', this)">Cliente</button>
+            </div>
+            <div class="options-container">
+                <div id="options1" class="options">
+                    <p><input class="inputela1" type="text" placeholder="Profissão*:"></p>
+                    <p><input class="inputela1" type="number" placeholder="Cnpj*:"></p>
+                    <p><input class="inputela1" type="text" placeholder="Experiência*:"></p>
+                    <p><input class="inputela1" type="number" placeholder="Tempo de Profissão*:"></p>
+                    <p><input class="inputela1" type="tel" placeholder="Contato*:"></p>
+                    <p><input class="inputela1" type="text" placeholder="Instagram*:"></p>
+                    <p><input class="inputela1" type="text" placeholder="LinkedIn*:"></p>
+                </div>
+                <div id="options2" class="options">
+                    <p><input class="inputela1" type="text" placeholder="Tamanho da Casa*:"></p>
+                    <p><input class="inputela1" type="number" placeholder="Banheiros*:"></p>
+                    <p><input class="inputela1" type="number" placeholder="Quartos*:"></p>
+                    <p><input class="inputela1" type="number" placeholder="Quantidade de moradores*:"></p>
+                </div>
+            </div>
+        </div>
+    </main>
+</body>
+</html>
