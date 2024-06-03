@@ -22,7 +22,7 @@
     justify-content: center;
     align-items: center;
     gap: 50px;
-    background-image: url(img/fundoQuad1.png);
+    background-image: url(img/fundo.png);
     background-repeat: no-repeat;
     background-position: center;
     background-size: cover;
@@ -167,3 +167,50 @@ button.selected {
 .inputela2::placeholder{
     color: white;
 }
+header{
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    padding: 20px 50px 20px 50px;
+    position: sticky;
+    top: 0;
+    background-color: white;
+    color: black;
+    height: 40px;
+}
+nav{
+    display: flex;
+    flex-direction: row;
+    gap: 30px;
+}
+nav>a{
+    text-decoration: none;
+    color: black;
+    font-size: large;
+}
+nav>a:hover{
+    text-decoration: none;
+    color: rgb(46, 79, 151);
+}
+body{
+    background-image: url(img/fundo.png);
+    background-repeat: no-repeat;
+    background-position: center;
+    background-size: cover;
+}
+#func{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    gap: 30px;
+}
+header>input{
+    width: 700px;
+    height: 30px;
+    padding-left: 10px;
+    border-radius: 30px;
+    border-style: none;
+    border: solid 2px rgb(20, 29, 107);
+    margin: 0px 50px;
+}
+
