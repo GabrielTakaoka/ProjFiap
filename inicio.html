@@ -6,6 +6,7 @@
     <title>Inicio</title>
     <link rel="stylesheet" href="style.css">
     <link rel="shortcut icon" href="img/logo.png" type="image/x-icon">
+    <script src="scripts.js"></script>
 </head>
 <body>
     <header>
@@ -17,15 +18,19 @@
         <input type="text" placeholder="Pesquise pelo serviço ou pelo nome do profissional">
         <div id="func">
             <a href="">
-                <img src="img/search.webp" alt="" width="30px">
+                <img src="img/logo.png" alt="" width="30px">
             </a>
-            <a href="">
-                <img src="img/not.png" alt="" width="30px">
-            </a>
+            <div class="image-container">
+                <img src="img/not.png" alt="Ícone de Sino" class="clickable-image" onclick="openNotification()">
+            </div>
+            <div id="notification-popup" class="notification-popup">
+                <span class="close-button" onclick="closeNotification()">&times;</span>
+                <p>Esta é a notificação que aparece ao clicar no sino.</p>
+            </div>
         </div>
     </header>
     <main id="telaInicio">
-        
+        <div id></div>
     </main>
     <footer>
 

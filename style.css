@@ -192,12 +192,6 @@ nav>a:hover{
     text-decoration: none;
     color: rgb(46, 79, 151);
 }
-body{
-    background-image: url(img/fundo.png);
-    background-repeat: no-repeat;
-    background-position: center;
-    background-size: cover;
-}
 #func{
     display: flex;
     align-items: center;
@@ -213,4 +207,32 @@ header>input{
     border: solid 2px rgb(20, 29, 107);
     margin: 0px 50px;
 }
+.image-container {
+    display: inline-block;
+    position: relative;
+}
 
+.clickable-image {
+    width: 30px;
+    height: auto;
+    cursor: pointer;
+}
+.notification-popup {
+    display: none;
+    position: absolute;
+    top: 60px;
+    right: 0;
+    background-color: #fff;
+    padding: 20px;
+    border-radius: 10px;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+    text-align: center;
+    z-index: 1;
+}
+.close-button {
+    position: absolute;
+    top: 10px;
+    right: 10px;
+    font-size: 24px;
+    cursor: pointer;
+}
