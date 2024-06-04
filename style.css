@@ -177,6 +177,7 @@ header{
     background-color: white;
     color: black;
     height: 40px;
+    box-shadow: 1px 1px 3px rgba(0, 0, 0, 0.322);
 }
 nav{
     display: flex;
@@ -206,28 +207,39 @@ header>input{
     border-style: none;
     border: solid 2px rgb(20, 29, 107);
     margin: 0px 50px;
+    box-shadow: 1px 1px 1px rgba(17, 61, 143, 0.322);
 }
 .image-container {
     display: inline-block;
     position: relative;
 }
-
 .clickable-image {
     width: 30px;
     height: auto;
-    cursor: pointer;
 }
 .notification-popup {
     display: none;
     position: absolute;
-    top: 60px;
+    top: 2px;
     right: 0;
-    background-color: #fff;
+    background-color: #2c2c2c;
     padding: 20px;
     border-radius: 10px;
     box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
     text-align: center;
     z-index: 1;
+    color:white;
+    margin-right: 20px;
+}
+.notification-popup>p{
+    font-size: 12px;
+}
+#notf{
+    display: flex;
+    justify-content: space-between;
+    padding-bottom: 20px;
+    padding-right: 10px;
+    background-color: #2c2c2c;
 }
 .close-button {
     position: absolute;
@@ -235,4 +247,166 @@ header>input{
     right: 10px;
     font-size: 24px;
     cursor: pointer;
+}
+.close-button:hover{
+    color: rgb(165, 69, 69);
+}
+.clickable-image:hover{
+    background-color: #2c2c2c;
+    border-radius: 30px;
+    box-sizing: border-box;
+    padding: 5px;
+}
+#qd1{
+    display: flex;
+    flex-direction: column;
+    flex-wrap: wrap;
+    align-items: center;
+    gap: 30px;
+    width: 60%;
+    padding-top: 50px;
+}
+.rowqd1{
+    display: flex;
+    flex-direction: row;
+    flex-wrap: wrap;
+    gap: 30px;
+    justify-content: center;
+    align-items: center;
+}
+#b11{
+    width: 200px;
+    height: 100px;
+    background-image: url(img/paisagista.png);
+    text-align: left;
+    padding-left: 20px;
+    color: white;
+    border-radius: 15px;
+    border-style: none;
+}
+#b12{
+    width: 200px;
+    height: 100px;
+    background-image: url(img/mecanico.png);
+    text-align: left;
+    padding-left: 20px;
+    color: white;
+    border-radius: 15px;
+    border-style: none;
+}
+#b13{
+    width: 200px;
+    height: 100px;
+    background-image: url(img/eletricista.png);
+    text-align: left;
+    padding-left: 20px;
+    color: white;
+    border-radius: 15px;
+    border-style: none;
+}
+#b21{
+    width: 200px;
+    height: 100px;
+    background-image: url(img/encanador.png);
+    text-align: left;
+    padding-left: 20px;
+    color: white;
+    border-radius: 15px;
+    border-style: none;
+}
+#b22{
+    width: 200px;
+    height: 100px;
+    background-image: url(img/pedreiro.png);
+    text-align: left;
+    padding-left: 20px;
+    color: white;
+    border-radius: 15px;
+    border-style: none;
+}
+#b23{
+    width: 200px;
+    height: 100px;
+    background-image: url(img/pintor.png);
+    text-align: left;
+    padding-left: 20px;
+    color: white;
+    border-radius: 15px;
+    border-style: none;
+}
+#b31{
+    width: 200px;
+    height: 100px;
+    background-image: url(img/faxineira.png);
+    text-align: left;
+    padding-left: 20px;
+    color: white;
+    border-radius: 15px;
+    border-style: none;
+}
+#b32{
+    width: 200px;
+    height: 100px;
+    background-image: url(img/mudancas.png);
+    text-align: left;
+    padding-left: 20px;
+    color: white;
+    border-radius: 15px;
+    border-style: none;
+}
+#b33{
+    width: 200px;
+    height: 100px;
+    background-image: url(img/civil.png);
+    text-align: left;
+    padding-left: 20px;
+    color: white;
+    border-radius: 15px;
+    border-style: none;
+}
+#b41{
+    width: 200px;
+    height: 100px;
+    background-image: url(img/arquiteto.png);
+    text-align: left;
+    padding-left: 20px;
+    color: white;
+    border-radius: 15px;
+    border-style: none;
+}
+#telaInicio{
+    display: flex;
+    flex-direction: row;
+    flex-wrap: wrap;
+}
+#qd2{
+    display: flex;
+    flex-direction: column;
+    flex-wrap: wrap;
+    padding-top: 50px;
+    align-items: center;
+    width: 40%;
+    height: 100vh;
+    background-color: #80b494;
+    color: white;
+    gap: 30px;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.349);
+}
+.lastpro{
+    display: flex;
+    flex-direction: row;
+    flex-wrap: wrap;
+    align-items: center;
+    justify-content: center;
+    background-color: rgb(64, 70, 131);
+    width: 300px;
+    height: auto;
+    border-radius: 15px;
+    padding: 10px 10px 5px 10px;
+}
+.lastpro>p{
+    font-size: small;
+}
+#tagpro{
+    padding: 10px 10px 10px 25px;
 }
