@@ -1,0 +1,170 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Perfil</title>
+    <link rel="stylesheet" href="style.css">
+    <link rel="shortcut icon" href="img/logo.png" type="image/x-icon">
+    <script src="scripts.js"></script>
+</head>
+<body>
+    <header>
+        <nav>
+            <a href="">Inicio</a>
+            <a href="">Perfil</a>
+            <a href="">Chat</a>
+        </nav>
+        <input type="text" placeholder="Pesquise pelo serviço ou pelo nome do profissional">
+        <div id="func">
+            <a href="">
+                <img src="img/logo.png" alt="" width="30px">
+            </a>
+            <div class="image-container">
+                <img src="img/not_open.png" alt="Ícone de Sino" class="clickable-image" onclick="openNotification()">
+            </div>
+            <div id="notification-popup" class="notification-popup">
+                <span class="close-button" onclick="closeNotification()">&times;</span>
+                <div id="notf">
+                    <h3>Notificações</h3>
+                    <img src="img/not.png" alt="" width="30px">
+                </div>
+                <p>Esta é a notificação que aparece ao clicar no sino.</p>
+            </div>
+        </div>
+    </header>
+    <main id="telaPerfil">
+        <div id="qd1perfil">
+            <div id="hist">
+                <h3>Perfil</h3>
+            </div>
+            <div id="masterPerfil">
+                <div id="orgperfil">
+                    <div class="profile-container">
+                        <p>Monkey d Luffy</p>
+                        <div class="profile-picture">
+                            <img id="profile-img" src="img/perfilluffy.jpg" alt="Imagem de Perfil">
+                        </div>
+                        <button class="change-photo-btn" onclick="document.getElementById('file-input').click()">Trocar Foto</button>
+                        <input type="file" id="file-input" accept="image/*" style="display:none" onchange="changeProfilePicture(event)">
+                    </div>
+                </div>
+                <div id="orgrow">    
+                    <div class="perfilrow">
+                        <p>CEP: 00000-000</p>
+                        <p>Bairro: Jd. Ipiranga</p>
+                        <p>Quartos: 5</p>
+                        <p>Contato: (11) 00000-0000</p>
+                    </div>
+                    <div class="perfilrow">
+                        <p>Rua: Alameda Lima</p>
+                        <p>UF: SP</p>
+                        <p>Quantidade de moradores: 5</p>
+                    </div>
+                    <div class="perfilrow">
+                        <p>Cidade: Mogi das Cruzes</p>
+                        <p>Tamanho da casa: 70mm</p>
+                        <p>Banheiro: 5</p>
+                    </div>
+                </div>
+            </div> 
+        </div>
+        <div id="qd2perfil">
+            <div id="hist">
+                <h3>Histórico</h3>
+            </div>
+            <div id="qd2linhaperfil">
+                <div class="lastpro">
+                    <div>
+                        <img src="img/perfil.png" alt="" width="60px">
+                    </div>
+                    <div id="tagpro">
+                        <h4>Nome do profissional</h4>
+                        <p>Profissão</p>
+                        <p>00/00/0000</p>
+                    </div>
+                </div>
+                <div class="lastpro">
+                    <div>
+                        <img src="img/perfil.png" alt="" width="60px">
+                    </div>
+                    <div id="tagpro">
+                        <h4>Nome do profissional</h4>
+                        <p>Profissão</p>
+                        <p>00/00/0000</p>
+                    </div>
+                </div>
+            </div>
+            <div id="qd2linhaperfil">
+                <div class="lastpro">
+                    <div>
+                        <img src="img/perfil.png" alt="" width="60px">
+                    </div>
+                    <div id="tagpro">
+                        <h4>Nome do profissional</h4>
+                        <p>Profissão</p>
+                        <p>00/00/0000</p>
+                    </div>
+                </div>
+                <div class="lastpro">
+                    <div>
+                        <img src="img/perfil.png" alt="" width="60px">
+                    </div>
+                    <div id="tagpro">
+                        <h4>Nome do profissional</h4>
+                        <p>Profissão</p>
+                        <p>00/00/0000</p>
+                    </div>
+                </div>
+            </div>
+            <div id="qd2linhaperfil">
+                <div class="lastpro">
+                    <div>
+                        <img src="img/perfil.png" alt="" width="60px">
+                    </div>
+                    <div id="tagpro">
+                        <h4>Nome do profissional</h4>
+                        <p>Profissão</p>
+                        <p>00/00/0000</p>
+                    </div>
+                </div>
+                <div class="lastpro">
+                    <div>
+                        <img src="img/perfil.png" alt="" width="60px">
+                    </div>
+                    <div id="tagpro">
+                        <h4>Nome do profissional</h4>
+                        <p>Profissão</p>
+                        <p>00/00/0000</p>
+                    </div>
+                </div>
+            </div>
+            <div id="qd2linhaperfil">
+                <div class="lastpro">
+                    <div>
+                        <img src="img/perfil.png" alt="" width="60px">
+                    </div>
+                    <div id="tagpro">
+                        <h4>Nome do profissional</h4>
+                        <p>Profissão</p>
+                        <p>00/00/0000</p>
+                    </div>
+                </div>
+                <div class="lastpro">
+                    <div>
+                        <img src="img/perfil.png" alt="" width="60px">
+                    </div>
+                    <div id="tagpro">
+                        <h4>Nome do profissional</h4>
+                        <p>Profissão</p>
+                        <p>00/00/0000</p>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </main>
+    <footer>
+
+    </footer>
+</body>
+</html>
