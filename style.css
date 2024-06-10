@@ -171,6 +171,7 @@ header{
     display: flex;
     align-items: center;
     justify-content: space-between;
+    width: auto;
     padding: 20px 50px 20px 50px;
     position: sticky;
     top: 0;
@@ -539,7 +540,7 @@ header>input{
 }
 
 .message {
-    background-color: #007BFF;
+    background-color: #78ec95;
     color: rgb(0, 0, 0);
     margin-bottom: 15px;
     padding: 10px;
@@ -580,7 +581,6 @@ footer{
     height: 60px;
     align-items: center;
     justify-content: center;
-    margin-top: 30px;
 }
 #telaPerfil{
     display: flex;
@@ -642,8 +642,18 @@ footer{
     border-radius: 5px;
     cursor: pointer;
 }
-
+#editperfil {
+    background-color: #80b494;
+    color: white;
+    padding: 10px 20px;
+    border: none;
+    border-radius: 5px;
+    cursor: pointer;
+}
 .change-photo-btn:hover {
+    background-color: #45a049;
+}
+#editperfil:hover {
     background-color: #45a049;
 }
 .perfilrow{
@@ -675,4 +685,592 @@ footer{
     align-items: center;
     justify-content: center;
     gap: 20px;
+}
+.calendar {
+    width: 500px;
+    max-width: 500px;
+    height: 430px;
+    background: #fff;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+    border-radius: 8px;
+    overflow: hidden;
+    display: flex;
+    flex-direction: column;
+    margin-bottom: 30px;
+}
+
+.month {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 20px;
+    background: #2c2c2c;
+    color: #fff;
+}
+
+.month h2 {
+    margin: 0;
+}
+
+.month button {
+    background: none;
+    border: none;
+    color: #fff;
+    font-size: 24px;
+    cursor: pointer;
+}
+
+.weekdays, .days {
+    display: flex;
+    flex-wrap: wrap;
+}
+
+.weekdays div, .days .day {
+    width: calc(100% / 7);
+    padding: 15px;
+    box-sizing: border-box;
+    text-align: center;
+}
+
+.weekdays {
+    background: #ddd;
+}
+
+.days {
+    flex: 1;
+    display: flex;
+    flex-wrap: wrap;
+    align-content: flex-start;
+}
+
+.days .day {
+    background: #f9f9f9;
+    border: 1px solid #ddd;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 50px; /* Altura fixa para os dias */
+}
+
+.days .day:hover {
+    background: #80b494;
+    color: white;
+}
+
+.days .empty {
+    background: none;
+    border: none;
+}
+
+.appointment {
+    background: #ffeb3b;
+}
+
+.tooltip {
+    display: none;
+    position: absolute;
+    top: 100%;
+    left: 50%;
+    transform: translateX(-50%);
+    background: #333;
+    color: #fff;
+    padding: 5px;
+    border-radius: 3px;
+    font-size: 12px;
+    white-space: nowrap;
+}
+
+.appointment:hover .tooltip {
+    display: block;
+}
+#maincad{
+    display: flex;
+    flex-direction: column;
+}
+#calendario{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    padding-top: 50px;
+    background-color: #80b494;
+}
+.today {
+    color: #c92626;
+    font-weight: bold;
+}
+#calendario>h2{
+    padding-bottom: 50px;
+    color: white;
+}
+.board {
+    display: flex;
+    width: 50%;
+    max-width: 1200px;
+    height: 50%;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+    border-radius: 8px;
+    overflow: hidden;
+    margin-top: 60px;
+}
+
+.column {
+    flex: 1;
+    padding: 20px;
+    box-sizing: border-box;
+    display: flex;
+    flex-direction: column;
+    background-color: #f0f0f0;
+    margin: 10px;
+    border-radius: 8px;
+}
+
+.column h2 {
+    text-align: center;
+    font-size: medium;
+}
+.item {
+    padding: 15px;
+    margin: 10px 0;
+    background-color: #ffcccc;
+    border: 1px solid #ddd;
+    border-radius: 5px;
+    cursor: grab;
+}
+
+#awaiting .item {
+    background-color: #e0b5b5; /* Red */
+}
+
+#in-progress .item {
+    background-color: #fff0b3; /* Yellow */
+}
+
+#completed .item {
+    background-color: #ccffcc; /* Green */
+}
+
+.item.dragging {
+    opacity: 0.5;
+}
+#tarefas{
+    display: flex;
+    justify-content: center;
+    width: 100vw;
+    height: 100vh;
+    background-color: #2c2c2c;
+}
+#contratados{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+
+    height: auto;
+    background-color: #2c2c2c;
+    padding: 30px;
+}
+#contratadosql1{
+    flex-wrap: wrap;
+    padding-top: 30px;
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    justify-content: center;
+    gap: 30px;
+}
+#contratadosql2{
+    flex-wrap: wrap;
+    padding-top: 30px;
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    justify-content: center;
+    gap: 30px;
+}
+#contratadosql3{
+    flex-wrap: wrap;
+    padding-top: 30px;
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    justify-content: center;
+    gap: 30px;
+}
+#contratados>h3{
+    color: white;
+}
+.servcont{
+    display: flex;
+    flex-direction: row;
+    flex-wrap: wrap;
+    align-items: center;
+    justify-content: center;
+    background-color: rgb(255, 255, 255);
+    width: 300px;
+    height: auto;
+    border-radius: 15px;
+    padding: 10px 10px 5px 10px;
+    border: solid #80b494;
+}
+.servcont>p{
+    font-size: small;
+}
+#svcont{
+    padding: 10px 10px 10px 25px;
+}
+.profile-list {
+    width: 20%;
+    overflow-y: auto;
+    border-right: 1px solid #474747e0;
+    padding: 10px;
+    box-sizing: border-box;
+    background-color: #4e4e4e;
+    color: white;
+}
+.profile {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    padding: 10px;
+    border: 1px solid #646464;
+    cursor: pointer;
+    border-radius: 5px;
+    margin-bottom: 10px;
+}
+.profile:hover {
+    background-color: rgb(119, 119, 119);
+}
+.profile h3 {
+    margin: 0;
+}
+.messenger {
+    width: 80%;
+    padding: 30px 10px 10px 30px;
+    box-sizing: border-box;
+    display: flex;
+    flex-direction: column;
+    background-color: #80b494;
+}
+.messages {
+    flex-grow: 1;
+    overflow-y: auto;
+    border-bottom: 1px solid #ccc;
+    padding-bottom: 10px;
+    display: flex;
+    flex-direction: column;
+}
+.message.received {
+    align-self: flex-start;
+}
+.message.sent {
+    background: #5e7ba1;
+    color: white;
+    align-self: flex-end;
+    align-items: flex-end;
+    margin-right: 30px;
+}
+.message-input {
+    display: flex;
+    padding: 10px;
+}
+.message-input input {
+    flex-grow: 1;
+    padding: 10px;
+    border: 1px solid #ccc;
+    border-radius: 5px;
+}
+.message-input button {
+    padding: 10px;
+    margin-left: 10px;
+    border: none;
+    background-color: #007bff;
+    color: white;
+    border-radius: 5px;
+    cursor: pointer;
+}
+#menshis {
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+    height: 92vh;
+}
+#profileName {
+    color: white;
+    padding-bottom: 20px;
+}
+.profile-list > h2 {
+    padding-left: 10px;
+    padding-top: 30px;
+    padding-bottom: 20px;
+}
+
+.search-container {
+    display: flex;
+    justify-content: center;
+    padding: 20px;
+    background-color: #80b494;
+    color: #fff;
+}
+
+#search-field {
+    width: 300px;
+    padding: 10px;
+    border: none;
+    border-radius: 5px;
+    margin-right: 10px;
+}
+
+#filter-button {
+    padding: 10px 20px;
+    border: none;
+    border-radius: 5px;
+    background-color: #3b5998;
+    color: #fff;
+    cursor: pointer;
+}
+
+#filter-button:hover {
+    background-color: #6d84b4;
+}
+
+.filter-container {
+    display: none;
+    padding: 20px;
+    background-color: #f1f1f1;
+    border: 1px solid #ddd;
+    margin: 20px;
+    border-radius: 5px;
+}
+
+.filter-container label {
+    display: block;
+    margin: 10px 0 5px;
+}
+
+.filter-container input,
+.filter-container select {
+    width: calc(100% - 20px);
+    padding: 10px;
+    margin-bottom: 10px;
+    border: 1px solid #ccc;
+    border-radius: 5px;
+}
+
+#apply-filters {
+    padding: 10px 20px;
+    border: none;
+    border-radius: 5px;
+    background-color: #8b9dc3;
+    color: #fff;
+    cursor: pointer;
+}
+
+#apply-filters:hover {
+    background-color: #6d84b4;
+}
+
+.profiles-container {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+    padding: 20px;
+    height: 100vh;
+}
+
+.profile-card {
+    width: 200px;
+    height: 100px;
+    padding: 20px;
+    margin: 10px;
+    background-color: #fff;
+    border: 1px solid #ddd;
+    cursor: pointer;
+    transition: box-shadow 0.3s;
+    border-radius: 5px;
+    text-align: center;
+}
+
+.profile-card:hover {
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+}
+
+.profile-card h3 {
+    margin: 0;
+    color: #3b5998;
+}
+
+.profile-card p {
+    margin: 5px 0;
+    color: #555;
+}
+
+.profile-details-overlay {
+    display: none;
+    position: fixed;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    background-color: rgba(0, 0, 0, 0.5);
+    justify-content: center;
+    align-items: center;
+}
+
+.profile-details {
+    display: flex;
+    flex-direction: column;
+    gap: 10px;
+    background-color: #fff;
+    padding: 20px;
+    border-radius: 5px;
+    width: 300px;
+    position: relative;
+    
+}
+
+.profile-details h3 {
+    margin: 0 0 10px;
+}
+
+.profile-details p {
+    margin: 5px 0;
+}
+
+.close-button {
+    position: absolute;
+    top: 10px;
+    right: 10px;
+    cursor: pointer;
+    font-size: 20px;
+}
+
+#start-chat {
+    padding: 10px 20px;
+    border: none;
+    border-radius: 5px;
+    background-color: #3b5998;
+    color: #fff;
+    cursor: pointer;
+}
+
+#start-chat:hover {
+    background-color: #6d84b4;
+}
+.perfil-wrapper {
+    text-align: center;
+    height: 100vh;
+    padding: 60px;
+}
+
+h1 {
+    font-size: 24px;
+    color: #333;
+    margin-bottom: 20px;
+}
+
+.card {
+    background: white;
+    border-radius: 8px;
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+    padding: 20px;
+    width: 300px;
+    margin: 0 auto;
+    border: 1px solid #ccc;
+}
+
+.header {
+    display: flex;
+    justify-content: center;
+    margin-bottom: 20px;
+}
+
+.image {
+    width: 100px;
+    height: 100px;
+    background: #80b494;
+    border-radius: 50%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.image::before {
+    content: '👤';
+    font-size: 50px;
+    color: white;
+}
+
+.info h2 {
+    font-size: 18px;
+    margin-bottom: 10px;
+    color: #333;
+}
+
+.info p {
+    margin: 5px 0;
+    font-size: 14px;
+    color: #555;
+}
+
+.stars {
+    color: #80b494;
+}
+
+.comments {
+    margin-top: 20px;
+}
+
+.comments h3 {
+    font-size: 16px;
+    margin-bottom: 10px;
+    color: #333;
+}
+
+.comment {
+    display: flex;
+    align-items: flex-start;
+    background: #eafaf1;
+    padding: 10px;
+    border-radius: 8px;
+    margin-bottom: 10px;
+    border: 1px solid #2ecc71;
+}
+
+.comment-image {
+    width: 50px;
+    height: 35px;
+    background: #80b494;
+    border-radius: 50%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    margin-right: 10px;
+}
+
+.comment-image::before {
+    content: '👤';
+    font-size: 25px;
+    color: white;
+}
+
+.comment-text p {
+    margin: 0;
+    font-size: 12px;
+    color: #555;
+}
+
+.hire-button {
+    background: white;
+    color: #2ecc71;
+    border: 2px solid #2ecc71;
+    border-radius: 5px;
+    padding: 10px 20px;
+    font-size: 16px;
+    cursor: pointer;
+    transition: background 0.3s, color 0.3s;
+    margin-top: 20px;
+}
+
+.hire-button:hover {
+    background: #2ecc71;
+    color: white;
 }

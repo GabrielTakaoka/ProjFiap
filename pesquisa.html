@@ -1,0 +1,120 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Pesquise!</title>
+    <link rel="stylesheet" href="style.css">
+    <link rel="shortcut icon" href="img/logo.png" type="image/x-icon">
+    <script src="scripts.js"></script>
+</head>
+<body>
+    <header>
+        <nav>
+            <a href="">Inicio</a>
+            <a href="">Perfil</a>
+            <a href="">Chat</a>
+        </nav>
+        <input type="text" placeholder="Pesquise pelo serviço ou pelo nome do profissional">
+        <div id="func">
+            <a href="">
+                <img src="img/logo.png" alt="" width="30px">
+            </a>
+            <div class="image-container">
+                <img src="img/not_open.png" alt="Ícone de Sino" class="clickable-image" onclick="openNotification()">
+            </div>
+            <div id="notification-popup" class="notification-popup">
+                <span class="close-button" onclick="closeNotification()">&times;</span>
+                <div id="notf">
+                    <h3>Notificações</h3>
+                    <img src="img/not.png" alt="" width="30px">
+                </div>
+                <p>Esta é a notificação que aparece ao clicar no sino.</p>
+            </div>
+        </div>
+    </header>
+    <div class="search-container">
+        <input type="text" id="search-field" placeholder="Buscar serviços...">
+        <button id="filter-button">Filtros</button>
+    </div>
+
+    <div class="filter-container" id="filter-container">
+        <label for="service-type">Tipo de Serviço:</label>
+        <select id="service-type">
+            <option value="todos">Todos</option>
+            <option value="eletricista">Eletricista</option>
+            <option value="encanador">Encanador</option>
+            <option value="marceneiro">Marceneiro</option>
+        </select>
+        <label for="distance">Distância (km):</label>
+        <input type="number" id="distance" min="1" max="100">
+        <label for="price-min">Preço Mínimo:</label>
+        <input type="number" id="price-min" min="0">
+        <label for="price-max">Preço Máximo:</label>
+        <input type="number" id="price-max" min="0">
+        <button id="apply-filters">Aplicar Filtros</button>
+    </div>
+
+    <div class="profiles-container" id="profiles-container">
+        <!-- Perfis de exemplo -->
+        <div class="profile-card" onclick="showProfileDetails('profile1')">
+            <h3>João Silva</h3>
+            <p>Eletricista</p>
+            <p>★★★★★</p>
+        </div>
+        <div class="profile-card" onclick="showProfileDetails('profile2')">
+            <h3>Maria Oliveira</h3>
+            <p>Encanador</p>
+            <p>★★★★☆</p>
+        </div>
+        <div class="profile-card" onclick="showProfileDetails('profile3')">
+            <h3>Pedro Santos</h3>
+            <p>Marceneiro</p>
+            <p>★★★★☆</p>
+        </div>
+        <div class="profile-card" onclick="showProfileDetails('profile4')">
+            <h3>Carla Souza</h3>
+            <p>Eletricista</p>
+            <p>★★★☆☆</p>
+        </div>
+        
+    </div>
+
+    <div class="profile-details-overlay" id="profile-details-overlay">
+        <div class="profile-details">
+            <span class="close-button" onclick="closeProfileDetails()">×</span>
+            <h3 id="profile-name">João Silva</h3>
+            <p id="profile-email">Email: joao@example.com</p>
+            <p id="profile-phone">Celular: (11) 91234-5678</p>
+            <p id="profile-address">Endereço: Rua Exemplo, 123, São Paulo, SP</p>
+            <button id="start-chat">Iniciar Chat</button>
+        </div>
+    </div>
+    <div class="supt">
+        <button id="supportButton">
+            <img src="/img/chat-icon.png" alt="Chat Suporte" />
+        </button>
+        
+        <div id="supportDialog" class="dialog">
+            <div class="dialog-content">
+                <span class="fechar-button">&times;</span>
+                <h3>Suporte</h3>
+                <div class="chat-container">
+                    <div class="message from-support">
+                        <p>Olá! Como posso ajudar você hoje?</p>
+                    </div>
+                    <div class="message from-user">
+                        <p>Eu tenho uma dúvida sobre o serviço.</p>
+                    </div>
+                    <!-- Adicione mais mensagens aqui -->
+                </div>
+                <input type="text" id="userInput" placeholder="Digite sua mensagem..." />
+                <button id="sendButton">Enviar</button>
+            </div>
+        </div>
+    </div>
+    <footer>
+        <p>DEVELOPED FOR FIAP</p>
+    </footer>
+</body>
+</html>

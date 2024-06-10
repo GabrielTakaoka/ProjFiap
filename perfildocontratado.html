@@ -1,0 +1,92 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Perfil Contratar</title>
+    <link rel="stylesheet" href="style.css">
+    <link rel="shortcut icon" href="img/logo.png" type="image/x-icon">
+    <script src="scripts.js"></script>
+</head>
+<body>
+    <header>
+        <nav>
+            <a href="">Inicio</a>
+            <a href="">Perfil</a>
+            <a href="">Chat</a>
+        </nav>
+        <input type="text" placeholder="Pesquise pelo serviço ou pelo nome do profissional">
+        <div id="func">
+            <a href="">
+                <img src="img/logo.png" alt="" width="30px">
+            </a>
+            <div class="image-container">
+                <img src="img/not_open.png" alt="Ícone de Sino" class="clickable-image" onclick="openNotification()">
+            </div>
+            <div id="notification-popup" class="notification-popup">
+                <span class="close-button" onclick="closeNotification()">&times;</span>
+                <div id="notf">
+                    <h3>Notificações</h3>
+                    <img src="img/not.png" alt="" width="30px">
+                </div>
+                <p>Esta é a notificação que aparece ao clicar no sino.</p>
+            </div>
+        </div>
+    </header>
+    <div class="perfil-wrapper">
+        <h1>Perfil do Profissional</h1>
+        <div class="card">
+            <div class="header">
+                <div class="image"></div>
+            </div>
+            <div class="info">
+                <h2>Nome do profissional</h2>
+                <p><strong>Profissão:</strong> Pedreiro</p>
+                <p><strong>Experiência:</strong></p>
+                <p><strong>Tempo de Profissão:</strong></p>
+                <p><strong>Contato:</strong></p>
+                <p><strong>Instagram:</strong></p>
+                <p><strong>LinkedIn:</strong></p>
+                <p><strong>Avaliação:</strong> <span class="stars">★★★★★</span> Concluídos: 50</p>
+            </div>
+            <div class="comments">
+                <h3>Comentários</h3>
+                <div class="comment">
+                    <div class="comment-image"></div>
+                    <div class="comment-text">
+                        <p><strong>Avaliação:</strong> <span class="stars">★★★★★</span></p>
+                        <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua.</p>
+                    </div>
+                </div>
+            </div>
+        </div>
+        <button class="hire-button">Contratar</button>
+    </div>
+    <div class="supt">
+        <button id="supportButton">
+            <img src="/img/chat-icon.png" alt="Chat Suporte" />
+        </button>
+        
+        <div id="supportDialog" class="dialog">
+            <div class="dialog-content">
+                <span class="fechar-button">&times;</span>
+                <h3>Suporte</h3>
+                <div class="chat-container">
+                    <div class="message from-support">
+                        <p>Olá! Como posso ajudar você hoje?</p>
+                    </div>
+                    <div class="message from-user">
+                        <p>Eu tenho uma dúvida sobre o serviço.</p>
+                    </div>
+                    <!-- Adicione mais mensagens aqui -->
+                </div>
+                <input type="text" id="userInput" placeholder="Digite sua mensagem..." />
+                <button id="sendButton">Enviar</button>
+            </div>
+        </div>
+    </div>
+    <footer>
+        <p>DEVELOPED FOR FIAP</p>
+    </footer>
+</body>
+</html>

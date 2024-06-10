@@ -1,0 +1,103 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Calendario</title>
+    <link rel="stylesheet" href="style.css">
+    <link rel="shortcut icon" href="img/logo.png" type="image/x-icon">
+    <script src="scripts.js"></script>
+</head>
+<body>
+    <header>
+        <nav>
+            <a href="">Inicio</a>
+            <a href="">Perfil</a>
+            <a href="">Chat</a>
+        </nav>
+        <input type="text" placeholder="Pesquise pelo serviço ou pelo nome do profissional">
+        <div id="func">
+            <a href="">
+                <img src="img/logo.png" alt="" width="30px">
+            </a>
+            <div class="image-container">
+                <img src="img/not_open.png" alt="Ícone de Sino" class="clickable-image" onclick="openNotification()">
+            </div>
+            <div id="notification-popup" class="notification-popup">
+                <span class="close-button" onclick="closeNotification()">&times;</span>
+                <div id="notf">
+                    <h3>Notificações</h3>
+                    <img src="img/not.png" alt="" width="30px">
+                </div>
+                <p>Esta é a notificação que aparece ao clicar no sino.</p>
+            </div>
+        </div>
+    </header>
+    <div id="maincad">
+        <div id="calendario">
+            <h2>Calendário</h2>
+            <div class="calendar">
+                <div class="month">
+                    <button class="prev">&#10094;</button>
+                    <h2>Junho 2024</h2>
+                    <button class="next">&#10095;</button>
+                </div>
+                <div class="weekdays">
+                    <div>Dom</div>
+                    <div>Seg</div>
+                    <div>Ter</div>
+                    <div>Qua</div>
+                    <div>Qui</div>
+                    <div>Sex</div>
+                    <div>Sáb</div>
+                </div>
+                <div class="days"></div>
+            </div>
+        </div>
+        <div id="tarefas">
+            <div class="board">
+                <div class="column" id="awaiting">
+                    <h2>Aguardando Resposta</h2>
+                    <div class="item" draggable="true" id="item1"><h4>Nome do usario:</h4>
+                        <p>Local:</p>
+                        <p>00/00/0000</p></div>
+                    <div class="item" draggable="true" id="item2"><h4>Nome do usario:</h4>
+                        <p>Local:</p>
+                        <p>00/00/0000</p></div>
+                </div>
+                <div class="column" id="in-progress">
+                    <h2>Em Andamento</h2>
+                </div>
+                <div class="column" id="completed">
+                    <h2>Finalizado</h2>
+                </div>
+            </div>
+        </div>
+    </div>
+    <div class="supt">
+        <button id="supportButton">
+            <img src="/img/chat-icon.png" alt="Chat Suporte" />
+        </button>
+        <div id="supportDialog" class="dialog">
+            <div class="dialog-content">
+                <span class="fechar-button">&times;</span>
+                <h3>Suporte</h3>
+                <div class="chat-container">
+                    <div class="message from-support">
+                        <p>Olá! Como posso ajudar você hoje?</p>
+                    </div>
+                    <div class="message from-user">
+                        <p>Eu tenho uma dúvida sobre o serviço.</p>
+                    </div>
+                    <!-- Adicione mais mensagens aqui -->
+                </div>
+                <input type="text" id="userInput" placeholder="Digite sua mensagem..." />
+                <button id="sendButton">Enviar</button>
+            </div>
+        </div>
+    </div>
+    <footer>
+        <p>DEVELOPED FOR FIAP</p>
+    </footer>
+</body>
+</html>
