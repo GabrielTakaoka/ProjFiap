@@ -1,5 +1,6 @@
 <!DOCTYPE html>
 <html lang="pt-br">
+
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
@@ -7,6 +8,7 @@
     <link rel="stylesheet" href="style.css">
     <link rel="shortcut icon" href="img/logo.png" type="image/x-icon">
 </head>
+
 <body>
     <main id="tela1">
         <div id="quadrante1">
@@ -15,19 +17,24 @@
             </h1>
             <img src="img/logo.png" alt="">
         </div>
-        <div id="quadrante2">
-            <img src="img/logocontraste.png" alt="">
-            <h3>
-                Logar
-            </h3>
-            <input class="inputela1" type="email" placeholder="Email*:">
-            <input class="inputela1" type="password" placeholder="Senha*:">
-            <div id="quadrante2Check">
-                <input type="checkbox" name="Lembrar" id="lembrar"><h5>Lembrar</h5>
+        <form id="loginForm">
+            <div id="quadrante2">
+                <img src="img/logocontraste.png" alt="">
+                <h3>
+                    Logar
+                </h3>
+                <input class="inputela1" id="email" type="email" placeholder="Email*:">
+                <input class="inputela1" id="password" type="password" placeholder="Senha*:">
+                <div id="quadrante2Check">
+                    <input type="checkbox" name="Lembrar" id="lembrar">
+                    <h5>Lembrar</h5>
+                </div>
+                <input id="b1tela1" type="submit" value="Entrar">
+                <input id="b2tela1" type="button" value="Cadastrar-se">
             </div>
-            <input id="b1tela1" type="button" value="Entrar">
-            <input id="b2tela1" type="button" value="Cadastrar-se">
-        </div>
+        </form>
     </main>
+    <script src="/scripts/login.js"></script>
 </body>
+
 </html>
