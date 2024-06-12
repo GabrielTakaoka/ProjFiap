@@ -1,6 +1,6 @@
 @import url('https://fonts.googleapis.com/css2?family=Poppins:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&display=swap');
 
-*{
+* {
     margin: 0px;
     padding: 0px;
     text-decoration: none;
@@ -10,13 +10,14 @@
 }
 
 /* TELA 1 - Quadrante1 */
-#tela1{
+#tela1 {
     display: flex;
     flex-direction: row;
     flex-wrap: wrap;
     height: 100vh;
 }
-#quadrante1{
+
+#quadrante1 {
     display: flex;
     flex-direction: column;
     justify-content: center;
@@ -29,7 +30,8 @@
     width: 60vw;
     color: white;
 }
-#quadrante2{
+
+#quadrante2 {
     display: flex;
     flex-direction: column;
     justify-content: center;
@@ -37,7 +39,8 @@
     gap: 50px;
     width: 40vw;
 }
-.inputela1{
+
+.inputela1 {
     width: 300px;
     height: 30px;
     padding-left: 10px;
@@ -46,11 +49,17 @@
     border: solid 2px rgb(20, 29, 107);
     margin: 0px 50px;
 }
-#quadrante2Check{
+
+select.inputela1 {
+    width: 313px;
+}
+
+#quadrante2Check {
     display: flex;
     gap: 10px;
 }
-#b1tela1{
+
+#b1tela1 {
     padding: 5px 15px 5px 15px;
     border-radius: 30px;
     border-style: none;
@@ -59,7 +68,8 @@
     color: black;
     box-shadow: 2px 2px 2px rgba(0, 0, 0, 0.500);
 }
-#b2tela1{
+
+#b2tela1 {
     padding: 5px 15px 5px 15px;
     border-radius: 30px;
     border-style: none;
@@ -68,16 +78,19 @@
     color: white;
     box-shadow: 2px 2px 2px rgba(0, 0, 0, 0.500);
 }
-#b1tela1:hover{
+
+#b1tela1:hover {
     background-color: rgb(74, 180, 74);
     border: solid 2px rgb(74, 180, 74);
     color: white;
 }
-#b2tela1:hover{
+
+#b2tela1:hover {
     background-color: rgb(74, 180, 74);
     border: solid 2px rgb(74, 180, 74);
     color: white;
 }
+
 .container {
     display: flex;
     gap: 50px;
@@ -97,6 +110,7 @@
 .options p {
     margin: 5px 0;
 }
+
 button.selected {
     padding: 5px 15px 5px 15px;
     border-radius: 30px;
@@ -106,19 +120,22 @@ button.selected {
     color: white;
     box-shadow: 2px 2px 2px rgba(0, 0, 0, 0.500);
 }
-#button1{
+
+#button1 {
     border-radius: 30px;
     padding: 5px 15px 5px 15px;
     border-style: none;
     border: solid 2px rgb(20, 29, 107);
 }
-#button2{
+
+#button2 {
     border-radius: 30px;
     padding: 5px 15px 5px 15px;
     border-style: none;
     border: solid 2px rgb(20, 29, 107);
 }
-#quadrante1tela2{
+
+#quadrante1tela2 {
     display: flex;
     flex-direction: column;
     justify-content: center;
@@ -131,28 +148,33 @@ button.selected {
     width: 60vw;
     color: white;
 }
-#tela2{
+
+#tela2 {
     display: flex;
     flex-direction: row;
     flex-wrap: wrap;
     height: 100vh;
 }
-#quadrante1tela2inps{
+
+#quadrante1tela2inps {
     display: flex;
     flex-direction: row;
     flex-wrap: wrap;
 }
-#quadrante1tela2inp1{
+
+#quadrante1tela2inp1 {
     display: flex;
     flex-direction: column;
     gap: 5px;
 }
-#quadrante1tela2inp2{
+
+#quadrante1tela2inp2 {
     display: flex;
     flex-direction: column;
     gap: 5px;
 }
-.inputela2{
+
+.inputela2 {
     background-color: rgba(0, 0, 255, 0);
     width: 300px;
     height: 30px;
@@ -164,10 +186,12 @@ button.selected {
     outline-style: none;
     margin-top: 10px;
 }
-.inputela2::placeholder{
+
+.inputela2::placeholder {
     color: white;
 }
-header{
+
+header {
     display: flex;
     align-items: center;
     justify-content: space-between;
@@ -180,27 +204,32 @@ header{
     height: 40px;
     box-shadow: 1px 1px 3px rgba(0, 0, 0, 0.322);
 }
-nav{
+
+nav {
     display: flex;
     flex-direction: row;
     gap: 30px;
 }
-nav>a{
+
+nav>a {
     text-decoration: none;
     color: black;
     font-size: large;
 }
-nav>a:hover{
+
+nav>a:hover {
     text-decoration: none;
     color: rgb(46, 79, 151);
 }
-#func{
+
+#func {
     display: flex;
     align-items: center;
     justify-content: center;
     gap: 30px;
 }
-header>input{
+
+header>input {
     width: 700px;
     height: 30px;
     padding-left: 10px;
@@ -210,14 +239,17 @@ header>input{
     margin: 0px 50px;
     box-shadow: 1px 1px 1px rgba(17, 61, 143, 0.322);
 }
+
 .image-container {
     display: inline-block;
     position: relative;
 }
+
 .clickable-image {
     width: 30px;
     height: auto;
 }
+
 .notification-popup {
     display: none;
     position: absolute;
@@ -229,19 +261,22 @@ header>input{
     box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
     text-align: center;
     z-index: 1;
-    color:white;
+    color: white;
     margin-right: 20px;
 }
-.notification-popup>p{
+
+.notification-popup>p {
     font-size: 12px;
 }
-#notf{
+
+#notf {
     display: flex;
     justify-content: space-between;
     padding-bottom: 20px;
     padding-right: 10px;
     background-color: #2c2c2c;
 }
+
 .close-button {
     position: absolute;
     top: 10px;
@@ -249,16 +284,19 @@ header>input{
     font-size: 24px;
     cursor: pointer;
 }
-.close-button:hover{
+
+.close-button:hover {
     color: rgb(165, 69, 69);
 }
-.clickable-image:hover{
+
+.clickable-image:hover {
     background-color: #2c2c2c;
     border-radius: 30px;
     box-sizing: border-box;
     padding: 5px;
 }
-#qd1{
+
+#qd1 {
     display: flex;
     flex-direction: column;
     flex-wrap: wrap;
@@ -271,7 +309,8 @@ header>input{
     background-repeat: no-repeat;
     background-size: cover;
 }
-.rowqd1{
+
+.rowqd1 {
     display: flex;
     flex-direction: row;
     flex-wrap: wrap;
@@ -279,7 +318,8 @@ header>input{
     justify-content: center;
     align-items: center;
 }
-#b11{
+
+#b11 {
     width: 110px;
     height: 100px;
     background-image: url(img/paisagista.png);
@@ -291,10 +331,12 @@ header>input{
     transition: width 1s;
     box-shadow: 2px 1px 4px rgba(0, 0, 0, 0.39);
 }
-#b11:hover{
+
+#b11:hover {
     width: 200px;
 }
-#b12{
+
+#b12 {
     width: 110px;
     height: 100px;
     background-image: url(img/mecanico.png);
@@ -306,10 +348,12 @@ header>input{
     transition: width 1s;
     box-shadow: 2px 1px 4px rgba(0, 0, 0, 0.39);
 }
-#b12:hover{
+
+#b12:hover {
     width: 200px;
 }
-#b13{
+
+#b13 {
     width: 110px;
     height: 100px;
     background-image: url(img/eletricista.png);
@@ -321,10 +365,12 @@ header>input{
     transition: width 1s;
     box-shadow: 2px 1px 4px rgba(0, 0, 0, 0.39);
 }
-#b13:hover{
+
+#b13:hover {
     width: 200px;
 }
-#b21{
+
+#b21 {
     width: 110px;
     height: 100px;
     background-image: url(img/encanador.png);
@@ -336,10 +382,12 @@ header>input{
     transition: width 1s;
     box-shadow: 2px 1px 4px rgba(0, 0, 0, 0.39);
 }
-#b21:hover{
+
+#b21:hover {
     width: 200px;
 }
-#b22{
+
+#b22 {
     width: 110px;
     height: 100px;
     background-image: url(img/pedreiro.png);
@@ -351,10 +399,12 @@ header>input{
     transition: width 1s;
     box-shadow: 2px 1px 4px rgba(0, 0, 0, 0.39);
 }
-#b22:hover{
+
+#b22:hover {
     width: 200px;
 }
-#b23{
+
+#b23 {
     width: 110px;
     height: 100px;
     background-image: url(img/pintor.png);
@@ -366,10 +416,12 @@ header>input{
     transition: width 1s;
     box-shadow: 2px 1px 4px rgba(0, 0, 0, 0.39);
 }
-#b23:hover{
+
+#b23:hover {
     width: 200px;
 }
-#b31{
+
+#b31 {
     width: 110px;
     height: 100px;
     background-image: url(img/faxineira.png);
@@ -381,10 +433,12 @@ header>input{
     transition: width 1s;
     box-shadow: 2px 1px 4px rgba(0, 0, 0, 0.39);
 }
-#b31:hover{
+
+#b31:hover {
     width: 200px;
 }
-#b32{
+
+#b32 {
     width: 110px;
     height: 100px;
     background-image: url(img/mudancas.png);
@@ -396,10 +450,12 @@ header>input{
     transition: width 1s;
     box-shadow: 2px 1px 4px rgba(0, 0, 0, 0.39);
 }
-#b32:hover{
+
+#b32:hover {
     width: 200px;
 }
-#b33{
+
+#b33 {
     width: 110px;
     height: 100px;
     background-image: url(img/civil.png);
@@ -411,10 +467,12 @@ header>input{
     transition: width 1s;
     box-shadow: 2px 1px 4px rgba(0, 0, 0, 0.39);
 }
-#b33:hover{
+
+#b33:hover {
     width: 200px;
 }
-#b41{
+
+#b41 {
     width: 110px;
     height: 100px;
     background-image: url(img/arquiteto.png);
@@ -426,15 +484,18 @@ header>input{
     transition: width 1s;
     box-shadow: 2px 1px 4px rgba(0, 0, 0, 0.39);
 }
-#b41:hover{
+
+#b41:hover {
     width: 200px;
 }
-#telaInicio{
+
+#telaInicio {
     display: flex;
     flex-direction: row;
     flex-wrap: wrap;
 }
-#qd2{
+
+#qd2 {
     display: flex;
     flex-direction: column;
     flex-wrap: wrap;
@@ -447,7 +508,8 @@ header>input{
     gap: 30px;
     box-shadow: 0 4px 8px rgba(0, 0, 0, 0.349);
 }
-.lastpro{
+
+.lastpro {
     display: flex;
     flex-direction: row;
     flex-wrap: wrap;
@@ -459,10 +521,12 @@ header>input{
     border-radius: 15px;
     padding: 10px 10px 5px 10px;
 }
-.lastpro>p{
+
+.lastpro>p {
     font-size: small;
 }
-#tagpro{
+
+#tagpro {
     padding: 10px 10px 10px 25px;
 }
 
@@ -479,6 +543,7 @@ header>input{
     width: 50px;
     height: 50px;
 }
+
 #supportButton img:hover {
     width: 65px;
     height: 65px;
@@ -521,10 +586,12 @@ header>input{
     position: fixed;
     margin-left: 250px;
 }
-.dialog-content>h3{
+
+.dialog-content>h3 {
     padding: 10px;
     margin-top: 4px;
 }
+
 .fechar-button:hover,
 .fechar-button:focus {
     color: rgb(165, 69, 69);
@@ -574,7 +641,8 @@ header>input{
     cursor: pointer;
     margin: 0px 10px 10px 10px;
 }
-footer{
+
+footer {
     display: flex;
     background-color: #2c2c2c;
     color: rgba(192, 23, 122, 0.87);
@@ -582,29 +650,34 @@ footer{
     align-items: center;
     justify-content: center;
 }
-#telaPerfil{
+
+#telaPerfil {
     display: flex;
     flex-direction: column;
 }
-#qd1perfil{
+
+#qd1perfil {
     background-color: #2c2c2c;
     height: auto;
 }
-#qd2perfil{
+
+#qd2perfil {
     display: flex;
     flex-direction: column;
     flex-wrap: wrap;
     align-items: center;
     gap: 30px;
 }
-#qd2linhaperfil{
+
+#qd2linhaperfil {
     display: flex;
     flex-direction: row;
     flex-wrap: wrap;
     gap: 150px;
     color: white;
 }
-#hist{
+
+#hist {
     display: flex;
     background-color: rgb(64, 70, 131);
     width: 100vw;
@@ -613,6 +686,7 @@ footer{
     justify-content: center;
     align-items: center;
 }
+
 .profile-container {
     display: flex;
     flex-direction: column;
@@ -642,6 +716,7 @@ footer{
     border-radius: 5px;
     cursor: pointer;
 }
+
 #editperfil {
     background-color: #80b494;
     color: white;
@@ -650,26 +725,31 @@ footer{
     border-radius: 5px;
     cursor: pointer;
 }
+
 .change-photo-btn:hover {
     background-color: #45a049;
 }
+
 #editperfil:hover {
     background-color: #45a049;
 }
-.perfilrow{
+
+.perfilrow {
     display: flex;
     flex-direction: column;
     gap: 30px;
     color: #80b494;
     padding: 30px;
 }
-#orgrow{
+
+#orgrow {
     display: flex;
     flex-direction: row;
     flex-wrap: wrap;
     gap: 100px;
 }
-#masterPerfil{
+
+#masterPerfil {
     display: flex;
     flex-direction: row;
     flex-wrap: wrap;
@@ -678,7 +758,8 @@ footer{
     padding: 100px;
     gap: 100px;
 }
-#btcad{
+
+#btcad {
     display: flex;
     flex-direction: row;
     flex-wrap: wrap;
@@ -686,6 +767,7 @@ footer{
     justify-content: center;
     gap: 20px;
 }
+
 .calendar {
     width: 500px;
     max-width: 500px;
@@ -720,12 +802,14 @@ footer{
     cursor: pointer;
 }
 
-.weekdays, .days {
+.weekdays,
+.days {
     display: flex;
     flex-wrap: wrap;
 }
 
-.weekdays div, .days .day {
+.weekdays div,
+.days .day {
     width: calc(100% / 7);
     padding: 15px;
     box-sizing: border-box;
@@ -749,7 +833,8 @@ footer{
     display: flex;
     justify-content: center;
     align-items: center;
-    height: 50px; /* Altura fixa para os dias */
+    height: 50px;
+    /* Altura fixa para os dias */
 }
 
 .days .day:hover {
@@ -783,25 +868,30 @@ footer{
 .appointment:hover .tooltip {
     display: block;
 }
-#maincad{
+
+#maincad {
     display: flex;
     flex-direction: column;
 }
-#calendario{
+
+#calendario {
     display: flex;
     flex-direction: column;
     align-items: center;
     padding-top: 50px;
     background-color: #80b494;
 }
+
 .today {
     color: #c92626;
     font-weight: bold;
 }
-#calendario>h2{
+
+#calendario>h2 {
     padding-bottom: 50px;
     color: white;
 }
+
 .board {
     display: flex;
     width: 50%;
@@ -828,6 +918,7 @@ footer{
     text-align: center;
     font-size: medium;
 }
+
 .item {
     padding: 15px;
     margin: 10px 0;
@@ -838,28 +929,33 @@ footer{
 }
 
 #awaiting .item {
-    background-color: #e0b5b5; /* Red */
+    background-color: #e0b5b5;
+    /* Red */
 }
 
 #in-progress .item {
-    background-color: #fff0b3; /* Yellow */
+    background-color: #fff0b3;
+    /* Yellow */
 }
 
 #completed .item {
-    background-color: #ccffcc; /* Green */
+    background-color: #ccffcc;
+    /* Green */
 }
 
 .item.dragging {
     opacity: 0.5;
 }
-#tarefas{
+
+#tarefas {
     display: flex;
     justify-content: center;
     width: 100vw;
     height: 100vh;
     background-color: #2c2c2c;
 }
-#contratados{
+
+#contratados {
     display: flex;
     flex-direction: column;
     align-items: center;
@@ -868,7 +964,8 @@ footer{
     background-color: #2c2c2c;
     padding: 30px;
 }
-#contratadosql1{
+
+#contratadosql1 {
     flex-wrap: wrap;
     padding-top: 30px;
     display: flex;
@@ -877,7 +974,8 @@ footer{
     justify-content: center;
     gap: 30px;
 }
-#contratadosql2{
+
+#contratadosql2 {
     flex-wrap: wrap;
     padding-top: 30px;
     display: flex;
@@ -886,7 +984,8 @@ footer{
     justify-content: center;
     gap: 30px;
 }
-#contratadosql3{
+
+#contratadosql3 {
     flex-wrap: wrap;
     padding-top: 30px;
     display: flex;
@@ -895,10 +994,12 @@ footer{
     justify-content: center;
     gap: 30px;
 }
-#contratados>h3{
+
+#contratados>h3 {
     color: white;
 }
-.servcont{
+
+.servcont {
     display: flex;
     flex-direction: row;
     flex-wrap: wrap;
@@ -911,12 +1012,15 @@ footer{
     padding: 10px 10px 5px 10px;
     border: solid #80b494;
 }
-.servcont>p{
+
+.servcont>p {
     font-size: small;
 }
-#svcont{
+
+#svcont {
     padding: 10px 10px 10px 25px;
 }
+
 .profile-list {
     width: 20%;
     overflow-y: auto;
@@ -926,6 +1030,7 @@ footer{
     background-color: #4e4e4e;
     color: white;
 }
+
 .profile {
     display: flex;
     flex-direction: column;
@@ -936,12 +1041,15 @@ footer{
     border-radius: 5px;
     margin-bottom: 10px;
 }
+
 .profile:hover {
     background-color: rgb(119, 119, 119);
 }
+
 .profile h3 {
     margin: 0;
 }
+
 .messenger {
     width: 80%;
     padding: 30px 10px 10px 30px;
@@ -950,6 +1058,7 @@ footer{
     flex-direction: column;
     background-color: #80b494;
 }
+
 .messages {
     flex-grow: 1;
     overflow-y: auto;
@@ -958,9 +1067,11 @@ footer{
     display: flex;
     flex-direction: column;
 }
+
 .message.received {
     align-self: flex-start;
 }
+
 .message.sent {
     background: #5e7ba1;
     color: white;
@@ -968,16 +1079,19 @@ footer{
     align-items: flex-end;
     margin-right: 30px;
 }
+
 .message-input {
     display: flex;
     padding: 10px;
 }
+
 .message-input input {
     flex-grow: 1;
     padding: 10px;
     border: 1px solid #ccc;
     border-radius: 5px;
 }
+
 .message-input button {
     padding: 10px;
     margin-left: 10px;
@@ -987,17 +1101,20 @@ footer{
     border-radius: 5px;
     cursor: pointer;
 }
+
 #menshis {
     display: flex;
     flex-direction: row;
     justify-content: center;
     height: 92vh;
 }
+
 #profileName {
     color: white;
     padding-bottom: 20px;
 }
-.profile-list > h2 {
+
+.profile-list>h2 {
     padding-left: 10px;
     padding-top: 30px;
     padding-bottom: 20px;
@@ -1124,7 +1241,7 @@ footer{
     border-radius: 5px;
     width: 300px;
     position: relative;
-    
+
 }
 
 .profile-details h3 {
@@ -1155,6 +1272,7 @@ footer{
 #start-chat:hover {
     background-color: #6d84b4;
 }
+
 .perfil-wrapper {
     text-align: center;
     height: 100vh;

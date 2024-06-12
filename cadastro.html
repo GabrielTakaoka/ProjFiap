@@ -1,32 +1,34 @@
 <!DOCTYPE html>
 <html lang="pt-br">
+
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Cadastro</title>
-    <link rel="stylesheet" href="styles.css">
     <link rel="stylesheet" href="style.css">
     <script src="scripts.js"></script>
     <link rel="shortcut icon" href="img/logo.png" type="image/x-icon">
 </head>
+
 <body>
     <main id="tela2">
+        <input type="hidden" id="type" value="profissional">
         <div id="quadrante1tela2">
             <img src="img/logocontraste.png" alt="">
             <div id="quadrante1tela2inps">
                 <div id="quadrante1tela2inp1">
-                    <input class="inputela2" type="email" placeholder="Email*:">
-                    <input class="inputela2" type="password" placeholder="Senha*:">
-                    <input class="inputela2" type="text" placeholder="Nome*:">
-                    <input class="inputela2" type="tel" placeholder="Contato*:">
-                    <input class="inputela2" type="number" placeholder="Cpf*:">
+                    <input id="email" class="inputela2" type="email" placeholder="Email*:">
+                    <input id="senha" class="inputela2" type="password" placeholder="Senha*:">
+                    <input id="nome" class="inputela2" type="text" placeholder="Nome*:">
+                    <input id="contato" class="inputela2" type="tel" placeholder="Contato*:">
+                    <input id="cpf" class="inputela2" type="number" placeholder="Cpf*:">
                 </div>
                 <div id="quadrante1tela2inp2">
-                    <input class="inputela2" type="cep" placeholder="Cep*:">
-                    <input class="inputela2" type="text" placeholder="Rua*:">
-                    <input class="inputela2" type="text" placeholder="Bairro*:">
-                    <input class="inputela2" type="text" placeholder="Cidade*:">
-                    <input class="inputela2" type="text" placeholder="UF*:">
+                    <input id="cep" class="inputela2" type="cep" placeholder="Cep*:">
+                    <input id="rua" class="inputela2" type="text" placeholder="Rua*:">
+                    <input id="bairro" class="inputela2" type="text" placeholder="Bairro*:">
+                    <input id="cidade" class="inputela2" type="text" placeholder="Cidade*:">
+                    <input id="uf" class="inputela2" type="text" placeholder="UF*:">
                 </div>
             </div>
         </div>
@@ -34,37 +36,45 @@
             <img src="img/logo.png" alt="" width="80px">
             <p>Qual categoria de usuario você se encaixa?</p>
             <div class="container">
-                <button id="button1" onclick="showOptions('options1', this)">Profissional</button>
-                <button id="button2" onclick="showOptions('options2', this)">Cliente</button>
+                <button id="button1" onclick="showOptions('options1', this, 'profissional')">Profissional</button>
+                <button id="button2" onclick="showOptions('options2', this, 'cliente')">Cliente</button>
             </div>
             <div class="options-container">
                 <div id="options1" class="options">
-                    <p><input class="inputela1" type="text" placeholder="Profissão*:"></p>
-                    <p><input class="inputela1" type="number" placeholder="Cnpj*:"></p>
-                    <p><input class="inputela1" type="text" placeholder="Experiência*:"></p>
-                    <p><input class="inputela1" type="number" placeholder="Tempo de Profissão*:"></p>
-                    <p><input class="inputela1" type="tel" placeholder="Contato*:"></p>
-                    <p><input class="inputela1" type="text" placeholder="Instagram*:"></p>
-                    <p><input class="inputela1" type="text" placeholder="LinkedIn*:"></p>
+                    <!-- <p><input id="profissao" class="inputela1" type="text" placeholder="Profissão*:"></p> -->
+                    <p>
+                        <select name="" id="profissao" class="inputela1">
+                            <option value="">Profissão</option>
+                            <option value="eletricista">Eletricista</option>
+                            <option value="encanador">Encanador</option>
+                        </select>
+                    </p>
+                    <p><input id="cnpj" class="inputela1" type="number" placeholder="Cnpj*:"></p>
+                    <p><input id="experiencia" class="inputela1" type="text" placeholder="Experiência*:"></p>
+                    <p><input id="tempo-de-profissao" class="inputela1" type="number"
+                            placeholder="Tempo de Profissão*:"></p>
+                    <p><input id="instagram" class="inputela1" type="text" placeholder="Instagram*:"></p>
+                    <p><input id="linkedin" class="inputela1" type="text" placeholder="LinkedIn*:"></p>
                 </div>
                 <div id="options2" class="options">
-                    <p><input class="inputela1" type="text" placeholder="Tamanho da Casa*:"></p>
-                    <p><input class="inputela1" type="number" placeholder="Banheiros*:"></p>
-                    <p><input class="inputela1" type="number" placeholder="Quartos*:"></p>
-                    <p><input class="inputela1" type="number" placeholder="Quantidade de moradores*:"></p>
+                    <p><input id="tamanho-da-casa" class="inputela1" type="text" placeholder="Tamanho da Casa*:"></p>
+                    <p><input id="banheiros" class="inputela1" type="number" placeholder="Banheiros*:"></p>
+                    <p><input id="quartos" class="inputela1" type="number" placeholder="Quartos*:"></p>
+                    <p><input id="quantidade-de-moradores" class="inputela1" type="number"
+                            placeholder="Quantidade de moradores*:"></p>
                 </div>
-            </div> 
+            </div>
             <div id="btcad">
-                <input id="b1tela1" type="button" value="Finalizar">
-                <input id="b1tela1" type="button" value="Retornar">
-            </div>   
+                <button id="b1tela1" onclick="collectInputDataAndPost()">Finalizar</button>
+                <button id="b1tela1">Retornar</button>
+            </div>
         </div>
     </main>
     <div class="supt">
         <button id="supportButton">
             <img src="/img/chat-icon.png" alt="Chat Suporte" />
         </button>
-        
+
         <div id="supportDialog" class="dialog">
             <div class="dialog-content">
                 <span class="fechar-button">&times;</span>
@@ -83,6 +93,7 @@
             </div>
         </div>
     </div>
-    
+    <script src="/scripts/cadastro.js"></script>
 </body>
+
 </html>

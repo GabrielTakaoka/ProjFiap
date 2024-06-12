@@ -1,23 +1,4 @@
-function showOptions(optionsId, button) {
 
-    var options = document.querySelectorAll('.options');
-    options.forEach(function(option) {
-        option.style.display = 'none';
-    });
-    
-
-    var selectedOptions = document.getElementById(optionsId);
-    selectedOptions.style.display = 'block';
-    
-
-    var buttons = document.querySelectorAll('.container button');
-    buttons.forEach(function(btn) {
-        btn.classList.remove('selected');
-    });
-    
-
-    button.classList.add('selected');
-}
 function openNotification() {
     document.getElementById('notification-popup').style.display = 'block';
 }
@@ -62,7 +43,7 @@ function changeProfilePicture(event) {
     const file = event.target.files[0];
     if (file) {
         const reader = new FileReader();
-        reader.onload = function(e) {
+        reader.onload = function (e) {
             document.getElementById('profile-img').src = e.target.result;
         };
         reader.readAsDataURL(file);
@@ -194,11 +175,11 @@ function openMessenger(profileName, initialMessage, profileKey) {
     var messenger = document.getElementById('messenger');
     var profileNameElement = document.getElementById('profileName');
     var messages = document.getElementById('messages');
-    
+
     profileNameElement.textContent = profileName;
 
     // Carregar mensagens do perfil selecionado
-    messages.innerHTML = profileMessages[profileKey].map(message => 
+    messages.innerHTML = profileMessages[profileKey].map(message =>
         '<p class="message ' + message.type + '">' + message.text + '</p>'
     ).join('');
 
@@ -234,7 +215,7 @@ document.getElementById('messageInput').addEventListener('keyup', function (e) {
     }
 });
 
-document.getElementById('filter-button').addEventListener('click', function() {
+document.getElementById('filter-button').addEventListener('click', function () {
     const filterContainer = document.getElementById('filter-container');
     if (filterContainer.style.display === 'block') {
         filterContainer.style.display = 'none';
@@ -250,7 +231,7 @@ function showProfileDetails(profileId) {
     const profilePhone = document.getElementById('profile-phone');
     const profileAddress = document.getElementById('profile-address');
 
-    switch(profileId) {
+    switch (profileId) {
         case 'profile1':
             profileName.innerText = 'João Silva';
             profileEmail.innerText = 'Email: joao@example.com';
@@ -290,7 +271,7 @@ function closeProfileDetails() {
     document.getElementById('profile-details-overlay').style.display = 'none';
 }
 
-document.getElementById('apply-filters').addEventListener('click', function() {
+document.getElementById('apply-filters').addEventListener('click', function () {
     const serviceType = document.getElementById('service-type').value;
     const distance = document.getElementById('distance').value;
     const priceMin = document.getElementById('price-min').value;
